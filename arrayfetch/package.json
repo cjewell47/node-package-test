@@ -1,0 +1,11 @@
+{
+  "name": "arrayfetch",
+  "version": "1.0.0",
+  "description": "package to fetch an array of urls containing JSON data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
