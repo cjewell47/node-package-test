@@ -18,7 +18,6 @@ function createPromise(endpoint) {
           // The whole response has been received. Resolve the result
           res.on('end', () => {
             const jsonData = JSON.parse(data);
-            console.log(jsonData.data)
             return resolve(jsonData.data);
           });
         }
