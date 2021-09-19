@@ -2,7 +2,7 @@
 
 const assert = require('assert');
 
-const { fetchData } = require('../index');
+const arrayfetch = require('../index');
 
 const endpoints = [
   'https://ft-tech-test-example.s3-eu-west-1.amazonaws.com/ftse-fsi.json',
@@ -12,11 +12,10 @@ const endpoints = [
 
 describe('use fetcharray on array of endpoints', () => {
   it('fetchData returns array equal in length to endpoints array', async () => {
-    fetchData(endpoints).then(function (items) {
+    arrayfetch.fetchData(endpoints).then(function (items) {
       assert.equal(items.length, endpoints.length)
       done();
     })
   });
-
 
 });
